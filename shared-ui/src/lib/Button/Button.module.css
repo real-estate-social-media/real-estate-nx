@@ -1,0 +1,85 @@
+.button {
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  text-align: center;
+  font-family: inherit;
+}
+
+/* Size variants */
+.button--small {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.button--medium {
+  padding: 12px 16px;
+  font-size: 16px;
+}
+
+.button--large {
+  padding: 16px 24px;
+  font-size: 18px;
+}
+
+/* Color variants */
+.button--primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.button--primary:hover:not(.button--disabled) {
+  background-color: #2563eb;
+}
+
+.button--secondary {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.button--secondary:hover:not(.button--disabled) {
+  background-color: #d1d5db;
+}
+
+.button--outline {
+  background-color: transparent;
+  border: 1px solid #3b82f6;
+  color: #3b82f6;
+}
+
+.button--outline:hover:not(.button--disabled) {
+  background-color: #eff6ff;
+}
+
+/* Disabled state */
+.button--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Loading state */
+.button__loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button__spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

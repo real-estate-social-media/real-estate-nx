@@ -1,0 +1,8 @@
+{
+  "name": "@real-estate-nx/shared-services",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "dependencies": {}
+}
